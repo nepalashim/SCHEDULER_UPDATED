@@ -82,7 +82,7 @@ const homepage = () => {
           </Row>
           <Row>
             <Col className="text-center">
-            <button className="btn btn-success rounded-5 btn-lg" data-aos="fade-up" data-aos-duration="1000" onClick={() => navigate("/class")}> See All Listings 
+            <button className="btn btn-success rounded-5 btn-lg my-4" data-aos="fade-up" data-aos-duration="1000" onClick={() => navigate("/class")}> See All Listings 
             <i className="fa-solid fa-chevron-right ms-1"></i>  
             </button>
             

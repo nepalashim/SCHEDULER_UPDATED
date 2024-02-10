@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer py-5">
       <Container>
-        <Row className="d-fleex justify-content-between">
+        <Row className="d-flex justify-content-between">
 
           <Col lg="5">
           <h1> Scheduler </h1>
@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="mail">
             <Link className="text-decoration-none">
             <i className="fa-regular fa-envelope"></i>
-            <p> engineersector@gmail.com</p>
+            <p className="m-0"> engineersector@gmail.com</p>
             </Link>
           </div>
           </Col>
