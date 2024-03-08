@@ -38,6 +38,11 @@ export const navLinks = [
     path: "addjobs",
     text: "AddJobs",
   },
+  {
+    id: 6,
+    path: "employeesignupandlogin",
+    text: "EmployeeSignupandlogin",
+  },
 ];
 
 export const allClass = [
