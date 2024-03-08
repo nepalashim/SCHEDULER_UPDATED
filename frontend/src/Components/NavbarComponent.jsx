@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react";
 import {Navbar, Container,Nav} from "react-bootstrap";
 import {navLinks} from "../data/index";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 const NavbarComponent = () => {
   const[changeColor, setchangeColor]=useState(false);
@@ -43,21 +43,31 @@ const NavbarComponent = () => {
                     })}
                     
                   </Nav>
+
+
                   <div className="text-center">
-                    
-                    <button   className="btn btn-outline-primary rounded-1 dropdown-toggle" 
+                          <div className="dropdown">
+                            <button
+                              className="btn btn-outline-primary rounded-1 dropdown-toggle"
                               type="button"
                               id="dropdownMenuButton"
                               data-toggle="dropdown"
                               aria-haspopup="true"
-                              aria-expanded="false" >
-                      Login/Register
+                              aria-expanded="false"
+                            >
+                              Login/Register
+                            </button>
+                            {/* <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <Link to="/employersignupandlogin" className="dropdown-item">
+                                EMPLOYER
+                              </Link>
+                              <Link to="/employeesignupandlogin" className="dropdown-item">
+                                EMPLOYEE
+                              </Link>
+                            </div> */}
+                          </div>
+                    </div>
 
-                    </button>
-
-                  </div>
-
-              
                 </Navbar.Collapse>
               </Container>
             </Navbar>
