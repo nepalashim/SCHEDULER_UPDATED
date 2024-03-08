@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import React from 'react';
 
 import user_icon from '../assets/img/loginsignup/person.png'
 import email_icon from '../assets/img/loginsignup/email.png'
@@ -79,3 +80,5 @@ const EmployeeSignupandlogin =() => {
         </div>
     )
 }
+
+export default EmployeeSignupandlogin
