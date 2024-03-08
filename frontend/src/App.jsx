@@ -8,6 +8,7 @@ import homepage from "./pages/homepage";
 import Faqpage from "./pages/Faqpage";
 import AddJobs from "./pages/AddJobs";
 import EmployeeSignupandlogin from "./pages/EmployeeSignupandlogin";
+import EmployerSignupandlogin from "./pages/EmployerSignupandlogin";
 
 
 import NavbarComponent from "./Components/NavbarComponent";
@@ -33,6 +34,7 @@ function App() {
         <Route  path ="/faq" Component={Faqpage}/>
         <Route  path ="/addjobs" Component={AddJobs}/>
         <Route  path ="/employeesignupandlogin" Component={EmployeeSignupandlogin} />
+        <Route  path ="/employersignupandlogin" Component={EmployerSignupandlogin} />
 
 
 

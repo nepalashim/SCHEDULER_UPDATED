@@ -44,10 +44,20 @@ const NavbarComponent = () => {
                     
                   </Nav>
                   <div className="text-center">
-                    <button className="btn btn-outline-primary rounded-1">
+                    
+                    <button   className="btn btn-outline-primary rounded-1 dropdown-toggle" 
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false" >
                       Login/Register
+
                     </button>
+
                   </div>
+
+              
                 </Navbar.Collapse>
               </Container>
             </Navbar>

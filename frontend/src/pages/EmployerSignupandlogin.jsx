@@ -5,9 +5,9 @@ import user_icon from '../assets/img/loginsignup/person.png'
 import email_icon from '../assets/img/loginsignup/email.png'
 import password_icon from '../assets/img/loginsignup/password.png'
 
-const EmployeeSignupandlogin =() => {
+const EmployerSignupandlogin =() => {
 
-    const [action, setAction] = useState("EMPLOYEE-Sign Up");
+    const [action, setAction] = useState("EMPLOYER-Sign Up");
 
     return(
         <div className="employee-signuploginpage">
@@ -27,10 +27,21 @@ const EmployeeSignupandlogin =() => {
                     <input type ="text" placeholder='First Name' />
                     </div>
 
-                    <div className="input">
+                    <div className="input my-4 ">
                     <img src ={user_icon} alt=""/>
                     <input type ="text" placeholder='Last Name'/>
                     </div>
+
+                    <div className="input my-4 ">
+                    <img src ={user_icon} alt=""/>
+                    <input type ="text" placeholder='Company'/>
+                    </div>
+
+                    <div className="input">
+                    <img src ={user_icon} alt=""/>
+                    <input type ="text" placeholder='Department'/>
+                    </div>
+
 
                 </div>
 
@@ -38,20 +49,7 @@ const EmployeeSignupandlogin =() => {
 
 
 
-                {/* <div className="input">
-                 <img src ={user_icon} alt=""/>
-                 <input type ="text" placeholder='Last Name'/>
-                </div>
-
-                <div className="input">
-                    <img src ={user_icon} alt=""/>
-                    <input type ="text" placeholder='First Name' />
-                </div>
-
-                <div className="input">
-                    <img src ={user_icon} alt=""/>
-                    <input type ="text" placeholder='Last Name'/>
-                </div> */}
+                
 
                 <div className="input">
                     <img src ={email_icon} alt=""/>
@@ -65,20 +63,20 @@ const EmployeeSignupandlogin =() => {
 
 
             </div>
-            {action==="EMPLOYEE-Sign Up"?<div></div>: 
+            {action==="EMPLOYER-Sign Up"?<div></div>: 
                 <div className="forgot-password"> Lost Password ? <span>Click Here!</span></div>
                 }
             
 
             <div className="submit-container">
-                <div className={action==="Login"?"submit gray":"submit"} onClick={() =>{setAction("EMPLOYEE-Sign Up")}}>EMPLOYEE-Sign Up
+                <div className={action==="Login"?"submit gray":"submit"} onClick={() =>{setAction("EMPLOYER-Sign Up")}}>EMPLOYER-Sign Up
                 </div>
 
-                <div className={action==="EMPLOYEE-Sign Up"?"submit gray":"submit"} onClick={() =>{setAction("Login")}}>Login
+                <div className={action==="EMPLOYER-Sign Up"?"submit gray":"submit"} onClick={() =>{setAction("Login")}}>Login
                 </div>
             </div>
         </div>
     )
 }
 
-export default EmployeeSignupandlogin
+export default EmployerSignupandlogin
