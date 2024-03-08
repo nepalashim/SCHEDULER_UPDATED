@@ -38,17 +38,17 @@ export const navLinks = [
     path: "addjobs",
     text: "AddJobs",
   },
-  {
-    id: 6,
-    path: "employeesignupandlogin",
-    text: "EmployeeSignupandlogin",
-  },
+  // {
+  //   id: 6,
+  //   path: "employeesignupandlogin",
+  //   text: "EmployeeSignupandlogin",
+  // },
 
-  {
-    id: 7,
-    path: "employersignupandlogin",
-    text: "EmployerSignupandlogin",
-  },
+  // {
+  //   id: 7,
+  //   path: "employersignupandlogin",
+  //   text: "EmployerSignupandlogin",
+  // },
 ];
 
 

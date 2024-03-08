@@ -2,6 +2,7 @@ import { useState,useEffect } from "react";
 import {Navbar, Container,Nav} from "react-bootstrap";
 import {navLinks} from "../data/index";
 import {Link, NavLink} from "react-router-dom";
+import Dropdown from 'react-bootstrap/Dropdown';
 
 const NavbarComponent = () => {
   const[changeColor, setchangeColor]=useState(false);
@@ -44,29 +45,29 @@ const NavbarComponent = () => {
                     
                   </Nav>
 
+                  <Dropdown className="text-center">
+                      <Dropdown.Toggle variant="white" id="dropdown-basic" className="btn btn-outline-primary rounded-3">
+                        <strong>Login/Register</strong>
+                        
+                      </Dropdown.Toggle>
 
-                  <div className="text-center">
-                          <div className="dropdown">
+                      <Dropdown.Menu>
+                        <Dropdown.Item  as={Link} to="/employeesignupandlogin"><strong>Employee</strong></Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/employersignupandlogin"><strong>Employer</strong></Dropdown.Item>
+                        
+                      </Dropdown.Menu>
+                  </Dropdown>
+
+
+                  {/* <div className="text-center">
+                          
                             <button
-                              className="btn btn-outline-primary rounded-1 dropdown-toggle"
-                              type="button"
-                              id="dropdownMenuButton"
-                              data-toggle="dropdown"
-                              aria-haspopup="true"
-                              aria-expanded="false"
+                              className="btn btn-outline-primary rounded-1 "
+                              
                             >
                               Login/Register
                             </button>
-                            {/* <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <Link to="/employersignupandlogin" className="dropdown-item">
-                                EMPLOYER
-                              </Link>
-                              <Link to="/employeesignupandlogin" className="dropdown-item">
-                                EMPLOYEE
-                              </Link>
-                            </div> */}
-                          </div>
-                    </div>
+                  </div> */}
 
                 </Navbar.Collapse>
               </Container>
