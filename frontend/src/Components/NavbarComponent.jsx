@@ -80,7 +80,7 @@ const NavbarComponentLoggedOut = () => {
 
 function NavbarComponent() {
   let loginStates = ['logged-out', 'employee-loggedin', 'employer-loggedin']
-  let [loggedInState] = useState(0);
+  let [loggedInState, setLoggedInState] = useState(0);
   return <>
     {loggedInState == 0 ? <NavbarComponentLoggedOut /> : <>
 
