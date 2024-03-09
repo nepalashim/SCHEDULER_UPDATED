@@ -36,7 +36,7 @@ export const navLinks = [
   {
     id: 5,
     path: "addjobs",
-    text: "AddJobs",
+    text: "Create Now",
   },
   // {
   //   id: 6,
